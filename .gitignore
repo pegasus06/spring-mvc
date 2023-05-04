@@ -1,0 +1,4 @@
+# Project exclude paths
+/out/
+/spring6/target/
+/springmvc-demo02/target/

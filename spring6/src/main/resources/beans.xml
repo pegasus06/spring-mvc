@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person" class="com.atguigu.spring6.pojo.Person" lazy-init="false">
+        <property name="axe" ref="axe"/>
+    </bean>
+    <bean id="axe" class="com.atguigu.spring6.pojo.Axe">
+    </bean>
+    <bean id="win" class="javax.swing.JFrame"></bean>
+    <bean id="date" class="java.util.Date"></bean>
+<!--    <bean id="person" class="com.atguigu.spring6.pojo.Chinese">-->
+<!--        <constructor-arg ref="steelAxe" index="0"></constructor-arg>-->
+<!--    </bean>-->
+    <bean class="com.atguigu.spring6.event.EmailNotifier"></bean>
+    <bean id="p1" class="com.atguigu.spring6.pojo.Person"></bean>
+    <bean id="p2" class="com.atguigu.spring6.pojo.Person" scope="prototype"></bean>
+    <bean id="chinese" class="com.atguigu.spring6.service.Chinese"></bean>
+</beans>
